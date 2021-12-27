@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>enterprise</string>
+	<key>compileBitcode</key>
+	<false/>
+	<key>uploadSymbols</key>
+	<false/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.tencent.JOOXiOSSDK-Example</key>
+		<string>16722ba2-6fd1-45ef-a009-f94b20bc0d4f</string>
+	</dict>
+</dict>
+</plist>

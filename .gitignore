@@ -1,0 +1,26 @@
+## Xcode
+## gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+**/node_modules/**
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+**/**.xcodeproj/xcuserdata/**
+**/**.xcworkspace/xcshareddata/**
+
+#Mac
+.DS_Store
+
+**/Pods
+#Podfile.lock
+*._*
+*.swp
+package-lock.json
+
+## JetBrains
+## gitignore
+.idea/
+

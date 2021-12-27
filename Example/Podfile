@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'JOOXiOSSDK_Example' do
+  pod 'KVOController', '~>1.2.0'
+  pod 'WebViewJavascriptBridge', '~> 6.0.3'
+  pod 'AFNetworking', '~>3.2.1'
+  pod 'CocoaAsyncSocket', '~> 7.6.3'
+  pod 'MMKV', '~> 1.0.23'
+  pod 'SSZipArchive', '~> 2.2.2'
+  pod 'Bugly'
+  pod 'SVProgressHUD'
+end

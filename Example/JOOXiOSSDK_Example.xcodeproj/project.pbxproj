@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3653BD8F2342FD4A000A88D9 /* dailybuildipa */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3653BD902342FD4A000A88D9 /* Build configuration list for PBXAggregateTarget "dailybuildipa" */;
+			buildPhases = (
+				3653BD962342FD6A000A88D9 /* ShellScript */,
+			);
+			dependencies = (
+				3653BD952342FD55000A88D9 /* PBXTargetDependency */,
+			);
+			name = dailybuildipa;
+			productName = dailybuildipa;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		36103B7123794FE3006F1804 /* libPods-JOOXiOSSDK_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FC434F8ADD7A7D5F8DF8BF /* libPods-JOOXiOSSDK_Example.a */; };
+		3653BCE52341EFA0000A88D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3653BCE32341EFA0000A88D9 /* Main.storyboard */; };
+		3653BCEA2341EFA1000A88D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3653BCE82341EFA1000A88D9 /* LaunchScreen.storyboard */; };
+		3653BCED2341EFA1000A88D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3653BCEC2341EFA1000A88D9 /* main.m */; };
+		3653BCFB2341F029000A88D9 /* JXViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3653BCF32341F029000A88D9 /* JXViewController.mm */; };
+		3653BCFC2341F029000A88D9 /* JXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3653BCF42341F029000A88D9 /* JXAppDelegate.m */; };
+		3653BCFD2341F029000A88D9 /* JXSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3653BCF62341F029000A88D9 /* JXSlider.m */; };
+		3653BCFE2341F029000A88D9 /* JXPlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3653BCF92341F029000A88D9 /* JXPlayerViewController.mm */; };
+		3653BD612341F03D000A88D9 /* FLACiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD052341F03D000A88D9 /* FLACiOS.framework */; };
+		3653BD632341F03D000A88D9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD572341F03D000A88D9 /* libcrypto.a */; };
+		3653BD642341F03D000A88D9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD582341F03D000A88D9 /* libssl.a */; };
+		3653BD652341F03D000A88D9 /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD5A2341F03D000A88D9 /* mars.framework */; };
+		3653BD682341F03D000A88D9 /* JOOXiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD5F2341F03D000A88D9 /* JOOXiOSSDK.framework */; };
+		3653BD742341F063000A88D9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD732341F05E000A88D9 /* libc++.tbd */; };
+		3653BD762341F071000A88D9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD752341F06C000A88D9 /* libresolv.tbd */; };
+		3653BD782341F080000A88D9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD772341F07C000A88D9 /* libz.tbd */; };
+		3653BD7A2341F08A000A88D9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BD792341F086000A88D9 /* libxml2.tbd */; };
+		3653BEA323431CF7000A88D9 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3653BEA223431CF0000A88D9 /* libiconv.tbd */; };
+		3653BEBA2344CF65000A88D9 /* JXPlayerSongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3653BEB62344CF65000A88D9 /* JXPlayerSongListViewController.m */; };
+		3653BEBB2344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3653BEB72344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.m */; };
+		36B7ED7E243F0737005668C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B7ED7D243F0737005668C8 /* Images.xcassets */; };
+		36B7ED94243F079A005668C8 /* JXDemoSongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED7F243F079A005668C8 /* JXDemoSongInfo.m */; };
+		36B7ED95243F079A005668C8 /* JXPlayListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED82243F079A005668C8 /* JXPlayListInfo.m */; };
+		36B7ED96243F079A005668C8 /* JXOpenAPIOnePlayListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED83243F079A005668C8 /* JXOpenAPIOnePlayListParser.m */; };
+		36B7ED97243F079A005668C8 /* JXOpenAPIOneTopListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED88243F079A005668C8 /* JXOpenAPIOneTopListParser.m */; };
+		36B7ED98243F079A005668C8 /* JXOpenAPITopListsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED89243F079A005668C8 /* JXOpenAPITopListsParser.m */; };
+		36B7ED99243F079A005668C8 /* JXTopListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED8A243F079A005668C8 /* JXTopListInfo.m */; };
+		36B7ED9A243F079A005668C8 /* JXOpenAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED8E243F079A005668C8 /* JXOpenAPIViewController.m */; };
+		36B7ED9B243F079A005668C8 /* JXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED8F243F079A005668C8 /* JXTestViewController.m */; };
+		36B7ED9C243F079A005668C8 /* JXAudioADParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ED93243F079A005668C8 /* JXAudioADParser.m */; };
+		F04E882198CCB6F1DE74F4E5 /* libPods-JOOXiOSSDK_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FC434F8ADD7A7D5F8DF8BF /* libPods-JOOXiOSSDK_Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3653BD942342FD55000A88D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3653BCCF2341EFA0000A88D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3653BCD62341EFA0000A88D9;
+			remoteInfo = JOOXiOSSDK_Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3653BD6B2341F043000A88D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35FC434F8ADD7A7D5F8DF8BF /* libPods-JOOXiOSSDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JOOXiOSSDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3653BCD72341EFA0000A88D9 /* JOOXiOSSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOOXiOSSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3653BCE42341EFA0000A88D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3653BCE92341EFA1000A88D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3653BCEB2341EFA1000A88D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3653BCEC2341EFA1000A88D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3653BCF32341F029000A88D9 /* JXViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JXViewController.mm; sourceTree = "<group>"; };
+		3653BCF42341F029000A88D9 /* JXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAppDelegate.m; sourceTree = "<group>"; };
+		3653BCF52341F029000A88D9 /* JXPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPlayerViewController.h; sourceTree = "<group>"; };
+		3653BCF62341F029000A88D9 /* JXSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXSlider.m; sourceTree = "<group>"; };
+		3653BCF72341F029000A88D9 /* JXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXViewController.h; sourceTree = "<group>"; };
+		3653BCF82341F029000A88D9 /* JXSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXSlider.h; sourceTree = "<group>"; };
+		3653BCF92341F029000A88D9 /* JXPlayerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JXPlayerViewController.mm; sourceTree = "<group>"; };
+		3653BCFA2341F029000A88D9 /* JXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAppDelegate.h; sourceTree = "<group>"; };
+		3653BD052341F03D000A88D9 /* FLACiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLACiOS.framework; sourceTree = "<group>"; };
+		3653BD0B2341F03D000A88D9 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		3653BD0C2341F03D000A88D9 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		3653BD0D2341F03D000A88D9 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		3653BD0E2341F03D000A88D9 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		3653BD0F2341F03D000A88D9 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		3653BD102341F03D000A88D9 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		3653BD112341F03D000A88D9 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		3653BD122341F03D000A88D9 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		3653BD132341F03D000A88D9 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		3653BD142341F03D000A88D9 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		3653BD152341F03D000A88D9 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		3653BD162341F03D000A88D9 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		3653BD172341F03D000A88D9 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		3653BD182341F03D000A88D9 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		3653BD192341F03D000A88D9 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		3653BD1A2341F03D000A88D9 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		3653BD1B2341F03D000A88D9 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		3653BD1C2341F03D000A88D9 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		3653BD1D2341F03D000A88D9 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		3653BD1E2341F03D000A88D9 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		3653BD1F2341F03D000A88D9 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		3653BD202341F03D000A88D9 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		3653BD212341F03D000A88D9 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		3653BD222341F03D000A88D9 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		3653BD232341F03D000A88D9 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		3653BD242341F03D000A88D9 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		3653BD252341F03D000A88D9 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		3653BD262341F03D000A88D9 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		3653BD272341F03D000A88D9 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		3653BD282341F03D000A88D9 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		3653BD292341F03D000A88D9 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		3653BD2A2341F03D000A88D9 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		3653BD2B2341F03D000A88D9 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		3653BD2C2341F03D000A88D9 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		3653BD2D2341F03D000A88D9 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		3653BD2E2341F03D000A88D9 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		3653BD2F2341F03D000A88D9 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		3653BD302341F03D000A88D9 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		3653BD312341F03D000A88D9 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		3653BD322341F03D000A88D9 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		3653BD332341F03D000A88D9 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		3653BD342341F03D000A88D9 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		3653BD352341F03D000A88D9 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		3653BD362341F03D000A88D9 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		3653BD372341F03D000A88D9 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		3653BD382341F03D000A88D9 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		3653BD392341F03D000A88D9 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		3653BD3A2341F03D000A88D9 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		3653BD3B2341F03D000A88D9 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		3653BD3C2341F03D000A88D9 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		3653BD3D2341F03D000A88D9 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		3653BD3E2341F03D000A88D9 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		3653BD3F2341F03D000A88D9 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		3653BD402341F03D000A88D9 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		3653BD412341F03D000A88D9 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		3653BD422341F03D000A88D9 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		3653BD432341F03D000A88D9 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		3653BD442341F03D000A88D9 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		3653BD452341F03D000A88D9 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		3653BD462341F03D000A88D9 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		3653BD472341F03D000A88D9 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		3653BD482341F03D000A88D9 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		3653BD492341F03D000A88D9 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		3653BD4A2341F03D000A88D9 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		3653BD4B2341F03D000A88D9 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		3653BD4C2341F03D000A88D9 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		3653BD4D2341F03D000A88D9 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		3653BD4E2341F03D000A88D9 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		3653BD4F2341F03D000A88D9 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		3653BD502341F03D000A88D9 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		3653BD512341F03D000A88D9 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		3653BD522341F03D000A88D9 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		3653BD532341F03D000A88D9 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		3653BD542341F03D000A88D9 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		3653BD552341F03D000A88D9 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		3653BD572341F03D000A88D9 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		3653BD582341F03D000A88D9 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		3653BD5A2341F03D000A88D9 /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
+		3653BD5F2341F03D000A88D9 /* JOOXiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JOOXiOSSDK.framework; sourceTree = "<group>"; };
+		3653BD732341F05E000A88D9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3653BD752341F06C000A88D9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3653BD772341F07C000A88D9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3653BD792341F086000A88D9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		3653BEA223431CF0000A88D9 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3653BEB62344CF65000A88D9 /* JXPlayerSongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPlayerSongListViewController.m; sourceTree = "<group>"; };
+		3653BEB72344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPlayerSongListViewTableViewCell.m; sourceTree = "<group>"; };
+		3653BEB82344CF65000A88D9 /* JXPlayerSongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPlayerSongListViewController.h; sourceTree = "<group>"; };
+		3653BEB92344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPlayerSongListViewTableViewCell.h; sourceTree = "<group>"; };
+		36B7ED7D243F0737005668C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		36B7ED7F243F079A005668C8 /* JXDemoSongInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDemoSongInfo.m; sourceTree = "<group>"; };
+		36B7ED81243F079A005668C8 /* JXOpenAPIOnePlayListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXOpenAPIOnePlayListParser.h; sourceTree = "<group>"; };
+		36B7ED82243F079A005668C8 /* JXPlayListInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPlayListInfo.m; sourceTree = "<group>"; };
+		36B7ED83243F079A005668C8 /* JXOpenAPIOnePlayListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXOpenAPIOnePlayListParser.m; sourceTree = "<group>"; };
+		36B7ED84243F079A005668C8 /* JXPlayListInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPlayListInfo.h; sourceTree = "<group>"; };
+		36B7ED85243F079A005668C8 /* JXDemoSongInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXDemoSongInfo.h; sourceTree = "<group>"; };
+		36B7ED86243F079A005668C8 /* JXOpenAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXOpenAPIViewController.h; sourceTree = "<group>"; };
+		36B7ED88243F079A005668C8 /* JXOpenAPIOneTopListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXOpenAPIOneTopListParser.m; sourceTree = "<group>"; };
+		36B7ED89243F079A005668C8 /* JXOpenAPITopListsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXOpenAPITopListsParser.m; sourceTree = "<group>"; };
+		36B7ED8A243F079A005668C8 /* JXTopListInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTopListInfo.m; sourceTree = "<group>"; };
+		36B7ED8B243F079A005668C8 /* JXOpenAPIOneTopListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXOpenAPIOneTopListParser.h; sourceTree = "<group>"; };
+		36B7ED8C243F079A005668C8 /* JXOpenAPITopListsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXOpenAPITopListsParser.h; sourceTree = "<group>"; };
+		36B7ED8D243F079A005668C8 /* JXTopListInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTopListInfo.h; sourceTree = "<group>"; };
+		36B7ED8E243F079A005668C8 /* JXOpenAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXOpenAPIViewController.m; sourceTree = "<group>"; };
+		36B7ED8F243F079A005668C8 /* JXTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTestViewController.m; sourceTree = "<group>"; };
+		36B7ED90243F079A005668C8 /* JXTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTestViewController.h; sourceTree = "<group>"; };
+		36B7ED92243F079A005668C8 /* JXAudioADParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAudioADParser.h; sourceTree = "<group>"; };
+		36B7ED93243F079A005668C8 /* JXAudioADParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXAudioADParser.m; sourceTree = "<group>"; };
+		9FD7F409DEEB1BDA836F1A16 /* Pods-JOOXiOSSDK_Example.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOOXiOSSDK_Example.dailybuild.xcconfig"; path = "Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		A832C0622E12D9A5EE67392B /* Pods-JOOXiOSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOOXiOSSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D0D78CF5E6C6CA16D3D59D12 /* Pods-JOOXiOSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JOOXiOSSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3653BCD42341EFA0000A88D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3653BD782341F080000A88D9 /* libz.tbd in Frameworks */,
+				3653BD682341F03D000A88D9 /* JOOXiOSSDK.framework in Frameworks */,
+				3653BD762341F071000A88D9 /* libresolv.tbd in Frameworks */,
+				3653BD642341F03D000A88D9 /* libssl.a in Frameworks */,
+				3653BEA323431CF7000A88D9 /* libiconv.tbd in Frameworks */,
+				3653BD612341F03D000A88D9 /* FLACiOS.framework in Frameworks */,
+				3653BD652341F03D000A88D9 /* mars.framework in Frameworks */,
+				3653BD742341F063000A88D9 /* libc++.tbd in Frameworks */,
+				3653BD632341F03D000A88D9 /* libcrypto.a in Frameworks */,
+				36103B7123794FE3006F1804 /* libPods-JOOXiOSSDK_Example.a in Frameworks */,
+				3653BD7A2341F08A000A88D9 /* libxml2.tbd in Frameworks */,
+				F04E882198CCB6F1DE74F4E5 /* libPods-JOOXiOSSDK_Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3653BCCE2341EFA0000A88D9 = {
+			isa = PBXGroup;
+			children = (
+				3653BCFF2341F03D000A88D9 /* Library */,
+				3653BCD92341EFA0000A88D9 /* JOOXiOSSDK_Example */,
+				3653BCD82341EFA0000A88D9 /* Products */,
+				3653BD722341F05D000A88D9 /* Frameworks */,
+				BE2761088A8F23FE8CF5717E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3653BCD82341EFA0000A88D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3653BCD72341EFA0000A88D9 /* JOOXiOSSDK_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3653BCD92341EFA0000A88D9 /* JOOXiOSSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				36B7ED91243F079A005668C8 /* AuidoAD */,
+				36B7ED80243F079A005668C8 /* PlayList */,
+				36B7ED87243F079A005668C8 /* TopList */,
+				36B7ED85243F079A005668C8 /* JXDemoSongInfo.h */,
+				36B7ED7F243F079A005668C8 /* JXDemoSongInfo.m */,
+				36B7ED86243F079A005668C8 /* JXOpenAPIViewController.h */,
+				36B7ED8E243F079A005668C8 /* JXOpenAPIViewController.m */,
+				36B7ED90243F079A005668C8 /* JXTestViewController.h */,
+				36B7ED8F243F079A005668C8 /* JXTestViewController.m */,
+				3653BEB82344CF65000A88D9 /* JXPlayerSongListViewController.h */,
+				3653BEB62344CF65000A88D9 /* JXPlayerSongListViewController.m */,
+				3653BEB92344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.h */,
+				3653BEB72344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.m */,
+				3653BCFA2341F029000A88D9 /* JXAppDelegate.h */,
+				3653BCF42341F029000A88D9 /* JXAppDelegate.m */,
+				3653BCF52341F029000A88D9 /* JXPlayerViewController.h */,
+				3653BCF92341F029000A88D9 /* JXPlayerViewController.mm */,
+				3653BCF82341F029000A88D9 /* JXSlider.h */,
+				3653BCF62341F029000A88D9 /* JXSlider.m */,
+				3653BCF72341F029000A88D9 /* JXViewController.h */,
+				3653BCF32341F029000A88D9 /* JXViewController.mm */,
+				3653BCE32341EFA0000A88D9 /* Main.storyboard */,
+				3653BCE82341EFA1000A88D9 /* LaunchScreen.storyboard */,
+				3653BCEB2341EFA1000A88D9 /* Info.plist */,
+				3653BCEC2341EFA1000A88D9 /* main.m */,
+				36B7ED7D243F0737005668C8 /* Images.xcassets */,
+			);
+			path = JOOXiOSSDK_Example;
+			sourceTree = "<group>";
+		};
+		3653BCFF2341F03D000A88D9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD002341F03D000A88D9 /* JOOXiOSSDK */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		3653BD002341F03D000A88D9 /* JOOXiOSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD012341F03D000A88D9 /* Dependency */,
+				3653BD5F2341F03D000A88D9 /* JOOXiOSSDK.framework */,
+			);
+			path = JOOXiOSSDK;
+			sourceTree = "<group>";
+		};
+		3653BD012341F03D000A88D9 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD042341F03D000A88D9 /* libFLAC */,
+				3653BD082341F03D000A88D9 /* openSSLSDK */,
+				3653BD592341F03D000A88D9 /* Mars */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		3653BD042341F03D000A88D9 /* libFLAC */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD052341F03D000A88D9 /* FLACiOS.framework */,
+			);
+			path = libFLAC;
+			sourceTree = "<group>";
+		};
+		3653BD082341F03D000A88D9 /* openSSLSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD092341F03D000A88D9 /* include */,
+				3653BD562341F03D000A88D9 /* lib */,
+			);
+			path = openSSLSDK;
+			sourceTree = "<group>";
+		};
+		3653BD092341F03D000A88D9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD0A2341F03D000A88D9 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3653BD0A2341F03D000A88D9 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD0B2341F03D000A88D9 /* pem2.h */,
+				3653BD0C2341F03D000A88D9 /* pem.h */,
+				3653BD0D2341F03D000A88D9 /* ssl3.h */,
+				3653BD0E2341F03D000A88D9 /* ossl_typ.h */,
+				3653BD0F2341F03D000A88D9 /* dtls1.h */,
+				3653BD102341F03D000A88D9 /* err.h */,
+				3653BD112341F03D000A88D9 /* bn.h */,
+				3653BD122341F03D000A88D9 /* blowfish.h */,
+				3653BD132341F03D000A88D9 /* cms.h */,
+				3653BD142341F03D000A88D9 /* engine.h */,
+				3653BD152341F03D000A88D9 /* conf_api.h */,
+				3653BD162341F03D000A88D9 /* x509.h */,
+				3653BD172341F03D000A88D9 /* asn1_mac.h */,
+				3653BD182341F03D000A88D9 /* ui.h */,
+				3653BD192341F03D000A88D9 /* kssl.h */,
+				3653BD1A2341F03D000A88D9 /* sha.h */,
+				3653BD1B2341F03D000A88D9 /* symhacks.h */,
+				3653BD1C2341F03D000A88D9 /* asn1.h */,
+				3653BD1D2341F03D000A88D9 /* opensslconf.h */,
+				3653BD1E2341F03D000A88D9 /* bio.h */,
+				3653BD1F2341F03D000A88D9 /* rc2.h */,
+				3653BD202341F03D000A88D9 /* dh.h */,
+				3653BD212341F03D000A88D9 /* ui_compat.h */,
+				3653BD222341F03D000A88D9 /* x509v3.h */,
+				3653BD232341F03D000A88D9 /* ssl23.h */,
+				3653BD242341F03D000A88D9 /* conf.h */,
+				3653BD252341F03D000A88D9 /* md5.h */,
+				3653BD262341F03D000A88D9 /* x509_vfy.h */,
+				3653BD272341F03D000A88D9 /* txt_db.h */,
+				3653BD282341F03D000A88D9 /* safestack.h */,
+				3653BD292341F03D000A88D9 /* ecdsa.h */,
+				3653BD2A2341F03D000A88D9 /* objects.h */,
+				3653BD2B2341F03D000A88D9 /* pkcs12.h */,
+				3653BD2C2341F03D000A88D9 /* crypto.h */,
+				3653BD2D2341F03D000A88D9 /* opensslv.h */,
+				3653BD2E2341F03D000A88D9 /* pkcs7.h */,
+				3653BD2F2341F03D000A88D9 /* obj_mac.h */,
+				3653BD302341F03D000A88D9 /* buffer.h */,
+				3653BD312341F03D000A88D9 /* ssl.h */,
+				3653BD322341F03D000A88D9 /* srp.h */,
+				3653BD332341F03D000A88D9 /* camellia.h */,
+				3653BD342341F03D000A88D9 /* evp.h */,
+				3653BD352341F03D000A88D9 /* e_os2.h */,
+				3653BD362341F03D000A88D9 /* md4.h */,
+				3653BD372341F03D000A88D9 /* hmac.h */,
+				3653BD382341F03D000A88D9 /* aes.h */,
+				3653BD392341F03D000A88D9 /* comp.h */,
+				3653BD3A2341F03D000A88D9 /* cast.h */,
+				3653BD3B2341F03D000A88D9 /* rc4.h */,
+				3653BD3C2341F03D000A88D9 /* stack.h */,
+				3653BD3D2341F03D000A88D9 /* des.h */,
+				3653BD3E2341F03D000A88D9 /* ocsp.h */,
+				3653BD3F2341F03D000A88D9 /* ec.h */,
+				3653BD402341F03D000A88D9 /* ecdh.h */,
+				3653BD412341F03D000A88D9 /* rand.h */,
+				3653BD422341F03D000A88D9 /* ts.h */,
+				3653BD432341F03D000A88D9 /* pqueue.h */,
+				3653BD442341F03D000A88D9 /* dso.h */,
+				3653BD452341F03D000A88D9 /* seed.h */,
+				3653BD462341F03D000A88D9 /* modes.h */,
+				3653BD472341F03D000A88D9 /* ssl2.h */,
+				3653BD482341F03D000A88D9 /* rsa.h */,
+				3653BD492341F03D000A88D9 /* krb5_asn.h */,
+				3653BD4A2341F03D000A88D9 /* des_old.h */,
+				3653BD4B2341F03D000A88D9 /* ripemd.h */,
+				3653BD4C2341F03D000A88D9 /* whrlpool.h */,
+				3653BD4D2341F03D000A88D9 /* tls1.h */,
+				3653BD4E2341F03D000A88D9 /* mdc2.h */,
+				3653BD4F2341F03D000A88D9 /* dsa.h */,
+				3653BD502341F03D000A88D9 /* srtp.h */,
+				3653BD512341F03D000A88D9 /* asn1t.h */,
+				3653BD522341F03D000A88D9 /* cmac.h */,
+				3653BD532341F03D000A88D9 /* ebcdic.h */,
+				3653BD542341F03D000A88D9 /* idea.h */,
+				3653BD552341F03D000A88D9 /* lhash.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		3653BD562341F03D000A88D9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD572341F03D000A88D9 /* libcrypto.a */,
+				3653BD582341F03D000A88D9 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3653BD592341F03D000A88D9 /* Mars */ = {
+			isa = PBXGroup;
+			children = (
+				3653BD5A2341F03D000A88D9 /* mars.framework */,
+			);
+			path = Mars;
+			sourceTree = "<group>";
+		};
+		3653BD722341F05D000A88D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3653BEA223431CF0000A88D9 /* libiconv.tbd */,
+				3653BD792341F086000A88D9 /* libxml2.tbd */,
+				3653BD772341F07C000A88D9 /* libz.tbd */,
+				3653BD752341F06C000A88D9 /* libresolv.tbd */,
+				3653BD732341F05E000A88D9 /* libc++.tbd */,
+				35FC434F8ADD7A7D5F8DF8BF /* libPods-JOOXiOSSDK_Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36B7ED80243F079A005668C8 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				36B7ED81243F079A005668C8 /* JXOpenAPIOnePlayListParser.h */,
+				36B7ED82243F079A005668C8 /* JXPlayListInfo.m */,
+				36B7ED83243F079A005668C8 /* JXOpenAPIOnePlayListParser.m */,
+				36B7ED84243F079A005668C8 /* JXPlayListInfo.h */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		36B7ED87243F079A005668C8 /* TopList */ = {
+			isa = PBXGroup;
+			children = (
+				36B7ED88243F079A005668C8 /* JXOpenAPIOneTopListParser.m */,
+				36B7ED89243F079A005668C8 /* JXOpenAPITopListsParser.m */,
+				36B7ED8A243F079A005668C8 /* JXTopListInfo.m */,
+				36B7ED8B243F079A005668C8 /* JXOpenAPIOneTopListParser.h */,
+				36B7ED8C243F079A005668C8 /* JXOpenAPITopListsParser.h */,
+				36B7ED8D243F079A005668C8 /* JXTopListInfo.h */,
+			);
+			path = TopList;
+			sourceTree = "<group>";
+		};
+		36B7ED91243F079A005668C8 /* AuidoAD */ = {
+			isa = PBXGroup;
+			children = (
+				36B7ED92243F079A005668C8 /* JXAudioADParser.h */,
+				36B7ED93243F079A005668C8 /* JXAudioADParser.m */,
+			);
+			path = AuidoAD;
+			sourceTree = "<group>";
+		};
+		BE2761088A8F23FE8CF5717E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0D78CF5E6C6CA16D3D59D12 /* Pods-JOOXiOSSDK_Example.debug.xcconfig */,
+				A832C0622E12D9A5EE67392B /* Pods-JOOXiOSSDK_Example.release.xcconfig */,
+				9FD7F409DEEB1BDA836F1A16 /* Pods-JOOXiOSSDK_Example.dailybuild.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3653BCD62341EFA0000A88D9 /* JOOXiOSSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3653BCF02341EFA1000A88D9 /* Build configuration list for PBXNativeTarget "JOOXiOSSDK_Example" */;
+			buildPhases = (
+				6306963068810E7E1A88BEAB /* [CP] Check Pods Manifest.lock */,
+				3653BCD32341EFA0000A88D9 /* Sources */,
+				3653BCD42341EFA0000A88D9 /* Frameworks */,
+				3653BCD52341EFA0000A88D9 /* Resources */,
+				3653BD6B2341F043000A88D9 /* Embed Frameworks */,
+				2303555836527B9A8C93657F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JOOXiOSSDK_Example;
+			productName = JOOXiOSSDK_Example;
+			productReference = 3653BCD72341EFA0000A88D9 /* JOOXiOSSDK_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3653BCCF2341EFA0000A88D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Tencent;
+				TargetAttributes = {
+					3653BCD62341EFA0000A88D9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					3653BD8F2342FD4A000A88D9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 3653BCD22341EFA0000A88D9 /* Build configuration list for PBXProject "JOOXiOSSDK_Example" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3653BCCE2341EFA0000A88D9;
+			productRefGroup = 3653BCD82341EFA0000A88D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3653BCD62341EFA0000A88D9 /* JOOXiOSSDK_Example */,
+				3653BD8F2342FD4A000A88D9 /* dailybuildipa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3653BCD52341EFA0000A88D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B7ED7E243F0737005668C8 /* Images.xcassets in Resources */,
+				3653BCEA2341EFA1000A88D9 /* LaunchScreen.storyboard in Resources */,
+				3653BCE52341EFA0000A88D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2303555836527B9A8C93657F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JOOXiOSSDK_Example/Pods-JOOXiOSSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3653BD962342FD6A000A88D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# compress application.\n\n/bin/mkdir $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp -R $CONFIGURATION_BUILD_DIR/JOOXiOSSDK_Example.app $CONFIGURATION_BUILD_DIR/Payload\n\n/bin/cp JOOXiOSSDK/Images.xcassets/AppIcon.appiconset/icon-1024.png $CONFIGURATION_BUILD_DIR/iTunesArtwork\n\ncd $CONFIGURATION_BUILD_DIR\n\n# zip up the HelloWorld directory\n\n/usr/bin/zip -r JOOXiOSSDK_Example.ipa Payload iTunesArtwork\n\n# 备份符号表\n/usr/bin/zip -r JOOXiOSSDK_Example.ipa.dSYM.zip  JOOXiOSSDK_Example.app.dSYM\n\n/bin/ls $CONFIGURATION_BUILD_DIR\ncat $CONFIGURATION_BUILD_DIR\n# 将ipa文件copy到根目录下的result目录\ncp $CONFIGURATION_BUILD_DIR/JOOXiOSSDK_Example.ipa  $SRCROOT/result/${BaseLine}.ipa\n\n/bin/ls $CONFIGURATION_BUILD_DIR\ncp -r $CONFIGURATION_BUILD_DIR/JOOXiOSSDK_Example.app.dSYM  $SRCROOT/JOOXiOSSDK_Example.app.dSYM\n";
+		};
+		6306963068810E7E1A88BEAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JOOXiOSSDK_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3653BCD32341EFA0000A88D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3653BEBB2344CF65000A88D9 /* JXPlayerSongListViewTableViewCell.m in Sources */,
+				3653BCFB2341F029000A88D9 /* JXViewController.mm in Sources */,
+				36B7ED9C243F079A005668C8 /* JXAudioADParser.m in Sources */,
+				3653BCED2341EFA1000A88D9 /* main.m in Sources */,
+				36B7ED97243F079A005668C8 /* JXOpenAPIOneTopListParser.m in Sources */,
+				3653BEBA2344CF65000A88D9 /* JXPlayerSongListViewController.m in Sources */,
+				36B7ED9B243F079A005668C8 /* JXTestViewController.m in Sources */,
+				36B7ED9A243F079A005668C8 /* JXOpenAPIViewController.m in Sources */,
+				36B7ED98243F079A005668C8 /* JXOpenAPITopListsParser.m in Sources */,
+				36B7ED99243F079A005668C8 /* JXTopListInfo.m in Sources */,
+				3653BCFE2341F029000A88D9 /* JXPlayerViewController.mm in Sources */,
+				36B7ED94243F079A005668C8 /* JXDemoSongInfo.m in Sources */,
+				3653BCFD2341F029000A88D9 /* JXSlider.m in Sources */,
+				36B7ED95243F079A005668C8 /* JXPlayListInfo.m in Sources */,
+				36B7ED96243F079A005668C8 /* JXOpenAPIOnePlayListParser.m in Sources */,
+				3653BCFC2341F029000A88D9 /* JXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3653BD952342FD55000A88D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3653BCD62341EFA0000A88D9 /* JOOXiOSSDK_Example */;
+			targetProxy = 3653BD942342FD55000A88D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3653BCE32341EFA0000A88D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3653BCE42341EFA0000A88D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3653BCE82341EFA1000A88D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3653BCE92341EFA1000A88D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3653BCEE2341EFA1000A88D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3653BCEF2341EFA1000A88D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3653BCF12341EFA1000A88D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D78CF5E6C6CA16D3D59D12 /* Pods-JOOXiOSSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "Apple Development: GUANGCHENG SUN (Q2GX6B788H)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WNX7B6MLPQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/libFLAC",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/Mars",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Library/JOOXiOSSDK/Dependency/openSSLSDK/include/",
+				);
+				INFOPLIST_FILE = JOOXiOSSDK_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/openSSLSDK/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tencent.JOOXiOSSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.tencent.*";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3653BCF22341EFA1000A88D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A832C0622E12D9A5EE67392B /* Pods-JOOXiOSSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HKB8WPFBR9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/libFLAC",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/Mars",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Library/JOOXiOSSDK/Dependency/openSSLSDK/include/",
+				);
+				INFOPLIST_FILE = JOOXiOSSDK_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/openSSLSDK/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tencent.JOOXiOSSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "16722ba2-6fd1-45ef-a009-f94b20bc0d4f";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3653BD8D2342FBF7000A88D9 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = DailyBuild;
+		};
+		3653BD8E2342FBF7000A88D9 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD7F409DEEB1BDA836F1A16 /* Pods-JOOXiOSSDK_Example.dailybuild.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer: GUANGCHENG SUN (Q2GX6B788H)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WNX7B6MLPQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/libFLAC",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/Mars",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Library/JOOXiOSSDK/Dependency/openSSLSDK/include/",
+				);
+				INFOPLIST_FILE = JOOXiOSSDK_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/JOOXiOSSDK/Dependency/openSSLSDK/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tencent.JOOXiOSSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.tencent.*";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DailyBuild;
+		};
+		3653BD912342FD4A000A88D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNX7B6MLPQ;
+				ENABLE_BITCODE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+			};
+			name = Debug;
+		};
+		3653BD922342FD4A000A88D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNX7B6MLPQ;
+				ENABLE_BITCODE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+			};
+			name = Release;
+		};
+		3653BD932342FD4A000A88D9 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNX7B6MLPQ;
+				ENABLE_BITCODE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+			};
+			name = DailyBuild;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3653BCD22341EFA0000A88D9 /* Build configuration list for PBXProject "JOOXiOSSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3653BCEE2341EFA1000A88D9 /* Debug */,
+				3653BCEF2341EFA1000A88D9 /* Release */,
+				3653BD8D2342FBF7000A88D9 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3653BCF02341EFA1000A88D9 /* Build configuration list for PBXNativeTarget "JOOXiOSSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3653BCF12341EFA1000A88D9 /* Debug */,
+				3653BCF22341EFA1000A88D9 /* Release */,
+				3653BD8E2342FBF7000A88D9 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3653BD902342FD4A000A88D9 /* Build configuration list for PBXAggregateTarget "dailybuildipa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3653BD912342FD4A000A88D9 /* Debug */,
+				3653BD922342FD4A000A88D9 /* Release */,
+				3653BD932342FD4A000A88D9 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3653BCCF2341EFA0000A88D9 /* Project object */;
+}

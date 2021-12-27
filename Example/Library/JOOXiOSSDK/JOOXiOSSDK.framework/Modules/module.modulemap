@@ -1,0 +1,6 @@
+framework module JOOXiOSSDK {
+  umbrella header "JOOXiOSSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
