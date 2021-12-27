@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JOOXiOSSDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JOOXiOSSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tencent</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/currentAudioADBaseInfo">currentAudioADBaseInfo</option>
+		
+		<option value="//api/name/currentAuthState">currentAuthState</option>
+		
+		<option value="//api/name/currentPlayerState">currentPlayerState</option>
+		
+		<option value="//api/name/currentSongBaseInfo">currentSongBaseInfo</option>
+		
+		<option value="//api/name/defaultAuthMode">defaultAuthMode</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/error">error</option>
+		
+		<option value="//api/name/playerDelegate">playerDelegate</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/alloc">+ alloc</option>
+		
+		<option value="//api/name/handleOpenURL:options:">+ handleOpenURL:options:</option>
+		
+		<option value="//api/name/new">+ new</option>
+		
+		<option value="//api/name/openDebugToolOnWindow:">+ openDebugToolOnWindow:</option>
+		
+		<option value="//api/name/openJOOX">+ openJOOX</option>
+		
+		<option value="//api/name/serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:">+ serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/auth">- auth</option>
+		
+		<option value="//api/name/authWithTicketToken:">- authWithTicketToken:</option>
+		
+		<option value="//api/name/cleanDownloadedSongWithSongBaseInfo:">- cleanDownloadedSongWithSongBaseInfo:</option>
+		
+		<option value="//api/name/doJOOXRequestWithUrlPathString:urlQueryString:callback:">- doJOOXRequestWithUrlPathString:urlQueryString:callback:</option>
+		
+		<option value="//api/name/getAudioADWithCallback:">- getAudioADWithCallback:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/isDownloadedSongWithSongBaseInfo:">- isDownloadedSongWithSongBaseInfo:</option>
+		
+		<option value="//api/name/logout">- logout</option>
+		
+		<option value="//api/name/pausePlay">- pausePlay</option>
+		
+		<option value="//api/name/playWithAduidoADBaseInfo:callback:">- playWithAduidoADBaseInfo:callback:</option>
+		
+		<option value="//api/name/playWithSongBaseInfo:callback:">- playWithSongBaseInfo:callback:</option>
+		
+		<option value="//api/name/resumePlay">- resumePlay</option>
+		
+		<option value="//api/name/seekTo:">- seekTo:</option>
+		
+		<option value="//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:">- startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:</option>
+		
+		<option value="//api/name/stopPlay">- stopPlay</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JOOXiOSSDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JOOXiOSSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The object that acts as the delegate of JOOXiOSSDK.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;JOOXiOSSDKDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerDelegate" title="playerDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerDelegate">&nbsp;&nbsp;playerDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;JOOXiOSSDKPlayerDelegate&gt; playerDelegate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultAuthMode" title="defaultAuthMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultAuthMode">&nbsp;&nbsp;defaultAuthMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default <a href="#//api/name/auth">auth</a> type: qrcode/phone/email.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *defaultAuthMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentAuthState" title="currentAuthState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentAuthState">&nbsp;&nbsp;currentAuthState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current <a href="#//api/name/auth">auth</a> status.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) JX_AUTH_STATE currentAuthState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentSongBaseInfo" title="currentSongBaseInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentSongBaseInfo">&nbsp;&nbsp;currentSongBaseInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current playing song&rsquo;s infomation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) JXSongBaseInfo *currentSongBaseInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentAudioADBaseInfo" title="currentAudioADBaseInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentAudioADBaseInfo">&nbsp;&nbsp;currentAudioADBaseInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current playing audio ad&rsquo;s infomation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) JXAudioADBaseInfo *currentAudioADBaseInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentPlayerState" title="currentPlayerState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlayerState">&nbsp;&nbsp;currentPlayerState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current player state.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) JX_PLAYER_STATE currentPlayerState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="method-title"><code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSError *error</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/alloc" title="alloc"></a>
+	<h3 class="method-title"><code><a href="#//api/name/alloc">+&nbsp;alloc</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>unavailable，please call serviceWithAppID to <a href="#//api/name/init">init</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)alloc</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>unavailable，please call serviceWithAppID to init.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/new" title="new"></a>
+	<h3 class="method-title"><code><a href="#//api/name/new">+&nbsp;new</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>unavailable，please call serviceWithAppID to <a href="#//api/name/init">init</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)new</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:" title="serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:">+&nbsp;serviceWithAppID:appName:scopeList:defaultAuthMode:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes and returns a JOOXiOSSDK object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)serviceWithAppID:(NSString *)<em>appID</em> appName:(NSString *)<em>appName</em> scopeList:(NSArray&lt;NSString*&gt; *)<em>scopeList</em> defaultAuthMode:(NSString *)<em>defaultAuthMode</em> delegate:(id&lt;JOOXiOSSDKDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appID</code></th>
+						<td><p>Application&rsquo;s ID.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appName</code></th>
+						<td><p>Application&rsquo;s name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scopeList</code></th>
+						<td><p>Scope list.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>defaultAuthMode</code></th>
+						<td><p>default <a href="#//api/name/auth">auth</a> type: qrcode/phone/email.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>A <a href="../Protocols/JOOXiOSSDKDelegate.html">JOOXiOSSDKDelegate</a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A JOOXiOSSDK object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleOpenURL:options:" title="handleOpenURL:options:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleOpenURL:options:">+&nbsp;handleOpenURL:options:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handle <a href="#//api/name/auth">auth</a> callback, need call this funcation at AppDelegate&rsquo;s funcation: application:openURL:options:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)handleOpenURL:(NSURL *)<em>url</em> options:(NSDictionary&lt;UIApplicationOpenURLOptionsKey,id&gt; *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL resource to open. This resource can be a network resource or a file. For information about the Apple-registered URL schemes, see Apple URL Scheme Reference.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>A dictionary of URL handling options. For information about the possible keys in this dictionary and how to handle them, see UIApplicationOpenURLOptionsKey. By default, the value of this parameter is an empty dictionary.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/auth" title="auth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/auth">&ndash;&nbsp;auth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Auth.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)auth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authWithTicketToken:" title="authWithTicketToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authWithTicketToken:">&ndash;&nbsp;authWithTicketToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Obtain authorization by ticket token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authWithTicketToken:(NSString *)<em>ticketToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ticketToken</code></th>
+						<td><p>The ticket token obtained from server.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logout.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/doJOOXRequestWithUrlPathString:urlQueryString:callback:" title="doJOOXRequestWithUrlPathString:urlQueryString:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/doJOOXRequestWithUrlPathString:urlQueryString:callback:">&ndash;&nbsp;doJOOXRequestWithUrlPathString:urlQueryString:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>do JOOX open api request</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)doJOOXRequestWithUrlPathString:(NSString *)<em>urlPathString</em> urlQueryString:(NSString *)<em>urlQueryString</em> callback:(void ( ^ ) ( JX_API_RESPONSE_ERROR_CODE errorCode , NSString *jsonResult ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urlPathString</code></th>
+						<td><p>The path part of openapi url(scheme://host:port/path?query).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urlQueryString</code></th>
+						<td><p>The query part of openapi url(scheme://host:port/path?query).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>The callback of this request. errorCode: see JX_API_RESPONSE_ERROR_CODE; jsonResult: the response json string.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playWithSongBaseInfo:callback:" title="playWithSongBaseInfo:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playWithSongBaseInfo:callback:">&ndash;&nbsp;playWithSongBaseInfo:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>play song</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playWithSongBaseInfo:(JXSongBaseInfo *)<em>songBaseInfo</em> callback:(void ( ^ ) ( JX_START_PLAY_ERROR_CODE errorCode ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>songBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>The callback of play request. error: see JX_START_PLAY_ERROR_CODE.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playWithAduidoADBaseInfo:callback:" title="playWithAduidoADBaseInfo:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playWithAduidoADBaseInfo:callback:">&ndash;&nbsp;playWithAduidoADBaseInfo:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>play audio advertisement</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playWithAduidoADBaseInfo:(JXAudioADBaseInfo *)<em>audioADBaseInfo</em> callback:(void ( ^ ) ( JX_START_PLAY_ERROR_CODE errorCode ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioADBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXAudioADBaseInfo.html">JXAudioADBaseInfo</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>The callback of play request. error: see JX_START_PLAY_ERROR_CODE.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/seekTo:" title="seekTo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/seekTo:">&ndash;&nbsp;seekTo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Seek to time(s).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)seekTo:(float)<em>time</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>time</code></th>
+						<td><p>The time that you want seek to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resumePlay" title="resumePlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resumePlay">&ndash;&nbsp;resumePlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Resume play.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resumePlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pausePlay" title="pausePlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pausePlay">&ndash;&nbsp;pausePlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Pause play.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pausePlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopPlay" title="stopPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopPlay">&ndash;&nbsp;stopPlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop play.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:" title="startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:">&ndash;&nbsp;startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start download one song.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (JXSongDownloadTask *)startDownloadWithSongBaseInfo:(JXSongBaseInfo *)<em>songBaseInfo</em> startDownloadCallback:(jxSongDownloadStartDownloadCallbackBlock)<em>startDownloadCallback</em> progressCallback:(jxSongDownloadProgressCallbackBlock)<em>progressCallback</em> stateChangedCallback:(jxSongDownloadStateChangedCallbackBlock)<em>stateChangedCallback</em> finishCallBack:(jxSongDownloadFinishCallbackBlock)<em>finishCallback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>songBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startDownloadCallback</code></th>
+						<td><p>The callback of start download, see <a href="../Blocks/jxSongDownloadStartDownloadCallbackBlock.html">jxSongDownloadStartDownloadCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressCallback</code></th>
+						<td><p>The callback of download progress, see <a href="../Blocks/jxSongDownloadProgressCallbackBlock.html">jxSongDownloadProgressCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stateChangedCallback</code></th>
+						<td><p>The callback when download state is changed, see <a href="../Blocks/jxSongDownloadStateChangedCallbackBlock.html">jxSongDownloadStateChangedCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>finishCallback</code></th>
+						<td><p>The callback when download is finished, see <a href="../Blocks/jxSongDownloadFinishCallbackBlock.html">jxSongDownloadFinishCallbackBlock</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/JXSongDownloadTask.html">JXSongDownloadTask</a> object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownloadedSongWithSongBaseInfo:" title="isDownloadedSongWithSongBaseInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownloadedSongWithSongBaseInfo:">&ndash;&nbsp;isDownloadedSongWithSongBaseInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether song is  downloaded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isDownloadedSongWithSongBaseInfo:(JXSongBaseInfo *)<em>songBaseInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>songBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if is downloaded, otherwise return NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cleanDownloadedSongWithSongBaseInfo:" title="cleanDownloadedSongWithSongBaseInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cleanDownloadedSongWithSongBaseInfo:">&ndash;&nbsp;cleanDownloadedSongWithSongBaseInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete  downloaded song if exists.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cleanDownloadedSongWithSongBaseInfo:(JXSongBaseInfo *)<em>songBaseInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>songBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAudioADWithCallback:" title="getAudioADWithCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAudioADWithCallback:">&ndash;&nbsp;getAudioADWithCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get JOOX Audio Advertisement.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAudioADWithCallback:(void ( ^ ) ( NSError *_Nullable error , NSDictionary *_Nullable jsonDictionary ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>The callback of this request. error:nil if have no <a href="#//api/name/error">error</a>; jsonDictionary: the response json dictionary.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openJOOX" title="openJOOX"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openJOOX">+&nbsp;openJOOX</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open JOOX, if not installed, goto JOOX download page.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)openJOOX</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if successed, NO if failed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openDebugToolOnWindow:" title="openDebugToolOnWindow:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openDebugToolOnWindow:">+&nbsp;openDebugToolOnWindow:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open debug Tool, if need use this tool, call this funcation at AppDelegate&rsquo;s funcation: application:didFinishLaunchingWithOptions:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)openDebugToolOnWindow:(UIWindow *)<em>window</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>window</code></th>
+						<td><p>Current main window.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tencent. All rights reserved. Updated: 2021-12-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

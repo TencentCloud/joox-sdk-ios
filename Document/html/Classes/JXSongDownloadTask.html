@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JXSongDownloadTask Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JOOXiOSSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tencent</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/currentSongBaseInfo">currentSongBaseInfo</option>
+		
+		<option value="//api/name/currentState">currentState</option>
+		
+		<option value="//api/name/finishCallback">finishCallback</option>
+		
+		<option value="//api/name/progressCallback">progressCallback</option>
+		
+		<option value="//api/name/startDownloadCallback">startDownloadCallback</option>
+		
+		<option value="//api/name/stateChangedCallback">stateChangedCallback</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancel">- cancel</option>
+		
+		<option value="//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:">- startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JXSongDownloadTask Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JXSongDownloadTask.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/currentSongBaseInfo" title="currentSongBaseInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentSongBaseInfo">&nbsp;&nbsp;currentSongBaseInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) JXSongBaseInfo *currentSongBaseInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentState" title="currentState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentState">&nbsp;&nbsp;currentState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current download state.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) JXHttpDownloadTaskState currentState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDownloadCallback" title="startDownloadCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDownloadCallback">&nbsp;&nbsp;startDownloadCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start download result callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) jxSongDownloadStartDownloadCallbackBlock startDownloadCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/progressCallback" title="progressCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/progressCallback">&nbsp;&nbsp;progressCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download progress callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) jxSongDownloadProgressCallbackBlock progressCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stateChangedCallback" title="stateChangedCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stateChangedCallback">&nbsp;&nbsp;stateChangedCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download state is changed callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) jxSongDownloadStateChangedCallbackBlock stateChangedCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/finishCallback" title="finishCallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/finishCallback">&nbsp;&nbsp;finishCallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download is finished callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) jxSongDownloadFinishCallbackBlock finishCallback</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:" title="startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:">&ndash;&nbsp;startDownloadWithSongBaseInfo:startDownloadCallback:progressCallback:stateChangedCallback:finishCallBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start download one song.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startDownloadWithSongBaseInfo:(JXSongBaseInfo *)<em>songBaseInfo</em> startDownloadCallback:(jxSongDownloadStartDownloadCallbackBlock)<em>startDownloadCallback</em> progressCallback:(jxSongDownloadProgressCallbackBlock)<em>progressCallback</em> stateChangedCallback:(jxSongDownloadStateChangedCallbackBlock)<em>stateChangedCallback</em> finishCallBack:(jxSongDownloadFinishCallbackBlock)<em>finishCallback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>songBaseInfo</code></th>
+						<td><p>The <a href="../Classes/JXSongBaseInfo.html">JXSongBaseInfo</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startDownloadCallback</code></th>
+						<td><p>The callback of start download, see <a href="../Blocks/jxSongDownloadStartDownloadCallbackBlock.html">jxSongDownloadStartDownloadCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressCallback</code></th>
+						<td><p>The callback of download progress, see <a href="../Blocks/jxSongDownloadProgressCallbackBlock.html">jxSongDownloadProgressCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stateChangedCallback</code></th>
+						<td><p>The callback when download state is changed, see <a href="../Blocks/jxSongDownloadStateChangedCallbackBlock.html">jxSongDownloadStateChangedCallbackBlock</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>finishCallback</code></th>
+						<td><p>The callback when download is finished, see <a href="../Blocks/jxSongDownloadFinishCallbackBlock.html">jxSongDownloadFinishCallbackBlock</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel current download task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JXSongDownloadTask.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tencent. All rights reserved. Updated: 2021-12-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

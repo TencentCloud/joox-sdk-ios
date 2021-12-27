@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JOOXiOSSDKPlayerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JOOXiOSSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tencent</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/jxPlayerRemoteControlType:progressWhenSeek:">- jxPlayerRemoteControlType:progressWhenSeek:</option>
+		
+		<option value="//api/name/jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:">- jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:</option>
+		
+		<option value="//api/name/jxPlayerUpdateWithState:">- jxPlayerUpdateWithState:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JOOXiOSSDKPlayerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JOOXiOSSDKDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/jxPlayerUpdateWithState:" title="jxPlayerUpdateWithState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/jxPlayerUpdateWithState:">&ndash;&nbsp;jxPlayerUpdateWithState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Player state change callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)jxPlayerUpdateWithState:(JX_PLAYER_STATE)<em>playState</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playState</code></th>
+						<td><p>The new player state.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDKDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:" title="jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:">&ndash;&nbsp;jxPlayerUpdateWithProgressTime:durationTime:bufferedProgress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Player progress change callback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)jxPlayerUpdateWithProgressTime:(double)<em>progressTime</em> durationTime:(double)<em>durationTime</em> bufferedProgress:(double)<em>bufferedProgress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressTime</code></th>
+						<td><p>Current progress time(s).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>durationTime</code></th>
+						<td><p>Total duration time(s).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bufferedProgress</code></th>
+						<td><p>Buffered data progress, from 0.00 to 1.00.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDKDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/jxPlayerRemoteControlType:progressWhenSeek:" title="jxPlayerRemoteControlType:progressWhenSeek:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/jxPlayerRemoteControlType:progressWhenSeek:">&ndash;&nbsp;jxPlayerRemoteControlType:progressWhenSeek:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Player remote control callback (On lock screen).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)jxPlayerRemoteControlType:(JX_REMOTE_CONTROL_TYPE)<em>type</em> progressWhenSeek:(float)<em>time</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The remote control type, see JX_REMOTE_CONTROL_TYPE.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>time</code></th>
+						<td><p>The seek time(s) when type is JX_REMOTE_CONTROL_TYPE_SEEK.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JOOXiOSSDKDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Tencent. All rights reserved. Updated: 2021-12-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
